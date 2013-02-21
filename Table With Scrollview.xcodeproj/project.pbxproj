@@ -1,0 +1,495 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		030D232116D0112E00B38719 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 030D232016D0112E00B38719 /* UIKit.framework */; };
+		030D232316D0112E00B38719 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 030D232216D0112E00B38719 /* Foundation.framework */; };
+		030D232516D0112E00B38719 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 030D232416D0112E00B38719 /* CoreGraphics.framework */; };
+		030D232B16D0112E00B38719 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 030D232916D0112E00B38719 /* InfoPlist.strings */; };
+		030D232D16D0112E00B38719 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 030D232C16D0112E00B38719 /* main.m */; };
+		030D233116D0112E00B38719 /* KEAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 030D233016D0112E00B38719 /* KEAppDelegate.m */; };
+		030D233316D0112E00B38719 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 030D233216D0112E00B38719 /* Default.png */; };
+		030D233516D0112E00B38719 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 030D233416D0112E00B38719 /* Default@2x.png */; };
+		030D233716D0112E00B38719 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 030D233616D0112E00B38719 /* Default-568h@2x.png */; };
+		030D233A16D0112E00B38719 /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 030D233816D0112E00B38719 /* MainStoryboard_iPhone.storyboard */; };
+		030D233D16D0112E00B38719 /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 030D233B16D0112E00B38719 /* MainStoryboard_iPad.storyboard */; };
+		030D234016D0112E00B38719 /* KEViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 030D233F16D0112E00B38719 /* KEViewController.m */; };
+		030D234816D0112E00B38719 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 030D234716D0112E00B38719 /* SenTestingKit.framework */; };
+		030D234916D0112E00B38719 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 030D232016D0112E00B38719 /* UIKit.framework */; };
+		030D234A16D0112E00B38719 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 030D232216D0112E00B38719 /* Foundation.framework */; };
+		030D235216D0112E00B38719 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 030D235016D0112E00B38719 /* InfoPlist.strings */; };
+		030D235516D0112F00B38719 /* Table_With_ScrollviewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 030D235416D0112F00B38719 /* Table_With_ScrollviewTests.m */; };
+		030D236016D0117D00B38719 /* KETableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 030D235F16D0117D00B38719 /* KETableView.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		030D234B16D0112E00B38719 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 030D231516D0112E00B38719 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 030D231C16D0112E00B38719;
+			remoteInfo = "Table With Scrollview";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		030D231D16D0112E00B38719 /* Table With Scrollview.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Table With Scrollview.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		030D232016D0112E00B38719 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		030D232216D0112E00B38719 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		030D232416D0112E00B38719 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		030D232816D0112E00B38719 /* Table With Scrollview-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Table With Scrollview-Info.plist"; sourceTree = "<group>"; };
+		030D232A16D0112E00B38719 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		030D232C16D0112E00B38719 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		030D232E16D0112E00B38719 /* Table With Scrollview-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Table With Scrollview-Prefix.pch"; sourceTree = "<group>"; };
+		030D232F16D0112E00B38719 /* KEAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KEAppDelegate.h; sourceTree = "<group>"; };
+		030D233016D0112E00B38719 /* KEAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KEAppDelegate.m; sourceTree = "<group>"; };
+		030D233216D0112E00B38719 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		030D233416D0112E00B38719 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		030D233616D0112E00B38719 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		030D233916D0112E00B38719 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
+		030D233C16D0112E00B38719 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
+		030D233E16D0112E00B38719 /* KEViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KEViewController.h; sourceTree = "<group>"; };
+		030D233F16D0112E00B38719 /* KEViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KEViewController.m; sourceTree = "<group>"; };
+		030D234616D0112E00B38719 /* Table With ScrollviewTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Table With ScrollviewTests.octest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		030D234716D0112E00B38719 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		030D234F16D0112E00B38719 /* Table With ScrollviewTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Table With ScrollviewTests-Info.plist"; sourceTree = "<group>"; };
+		030D235116D0112E00B38719 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		030D235316D0112E00B38719 /* Table_With_ScrollviewTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Table_With_ScrollviewTests.h; sourceTree = "<group>"; };
+		030D235416D0112F00B38719 /* Table_With_ScrollviewTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Table_With_ScrollviewTests.m; sourceTree = "<group>"; };
+		030D235E16D0117D00B38719 /* KETableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KETableView.h; sourceTree = "<group>"; };
+		030D235F16D0117D00B38719 /* KETableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KETableView.m; sourceTree = "<group>"; };
+		030D236116D013FE00B38719 /* KETableViewDataSource.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KETableViewDataSource.h; sourceTree = "<group>"; };
+		03C50DE816D47143009A8A6C /* KETableViewDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KETableViewDelegate.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		030D231A16D0112E00B38719 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				030D232116D0112E00B38719 /* UIKit.framework in Frameworks */,
+				030D232316D0112E00B38719 /* Foundation.framework in Frameworks */,
+				030D232516D0112E00B38719 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		030D234216D0112E00B38719 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				030D234816D0112E00B38719 /* SenTestingKit.framework in Frameworks */,
+				030D234916D0112E00B38719 /* UIKit.framework in Frameworks */,
+				030D234A16D0112E00B38719 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		030D231416D0112E00B38719 = {
+			isa = PBXGroup;
+			children = (
+				030D232616D0112E00B38719 /* Table With Scrollview */,
+				030D234D16D0112E00B38719 /* Table With ScrollviewTests */,
+				030D231F16D0112E00B38719 /* Frameworks */,
+				030D231E16D0112E00B38719 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		030D231E16D0112E00B38719 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				030D231D16D0112E00B38719 /* Table With Scrollview.app */,
+				030D234616D0112E00B38719 /* Table With ScrollviewTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		030D231F16D0112E00B38719 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				030D232016D0112E00B38719 /* UIKit.framework */,
+				030D232216D0112E00B38719 /* Foundation.framework */,
+				030D232416D0112E00B38719 /* CoreGraphics.framework */,
+				030D234716D0112E00B38719 /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		030D232616D0112E00B38719 /* Table With Scrollview */ = {
+			isa = PBXGroup;
+			children = (
+				030D232F16D0112E00B38719 /* KEAppDelegate.h */,
+				030D233016D0112E00B38719 /* KEAppDelegate.m */,
+				030D233816D0112E00B38719 /* MainStoryboard_iPhone.storyboard */,
+				030D233B16D0112E00B38719 /* MainStoryboard_iPad.storyboard */,
+				030D233E16D0112E00B38719 /* KEViewController.h */,
+				030D233F16D0112E00B38719 /* KEViewController.m */,
+				030D232716D0112E00B38719 /* Supporting Files */,
+				030D235E16D0117D00B38719 /* KETableView.h */,
+				030D235F16D0117D00B38719 /* KETableView.m */,
+				030D236116D013FE00B38719 /* KETableViewDataSource.h */,
+				03C50DE816D47143009A8A6C /* KETableViewDelegate.h */,
+			);
+			path = "Table With Scrollview";
+			sourceTree = "<group>";
+		};
+		030D232716D0112E00B38719 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				030D232816D0112E00B38719 /* Table With Scrollview-Info.plist */,
+				030D232916D0112E00B38719 /* InfoPlist.strings */,
+				030D232C16D0112E00B38719 /* main.m */,
+				030D232E16D0112E00B38719 /* Table With Scrollview-Prefix.pch */,
+				030D233216D0112E00B38719 /* Default.png */,
+				030D233416D0112E00B38719 /* Default@2x.png */,
+				030D233616D0112E00B38719 /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		030D234D16D0112E00B38719 /* Table With ScrollviewTests */ = {
+			isa = PBXGroup;
+			children = (
+				030D235316D0112E00B38719 /* Table_With_ScrollviewTests.h */,
+				030D235416D0112F00B38719 /* Table_With_ScrollviewTests.m */,
+				030D234E16D0112E00B38719 /* Supporting Files */,
+			);
+			path = "Table With ScrollviewTests";
+			sourceTree = "<group>";
+		};
+		030D234E16D0112E00B38719 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				030D234F16D0112E00B38719 /* Table With ScrollviewTests-Info.plist */,
+				030D235016D0112E00B38719 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		030D231C16D0112E00B38719 /* Table With Scrollview */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 030D235816D0112F00B38719 /* Build configuration list for PBXNativeTarget "Table With Scrollview" */;
+			buildPhases = (
+				030D231916D0112E00B38719 /* Sources */,
+				030D231A16D0112E00B38719 /* Frameworks */,
+				030D231B16D0112E00B38719 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Table With Scrollview";
+			productName = "Table With Scrollview";
+			productReference = 030D231D16D0112E00B38719 /* Table With Scrollview.app */;
+			productType = "com.apple.product-type.application";
+		};
+		030D234516D0112E00B38719 /* Table With ScrollviewTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 030D235B16D0112F00B38719 /* Build configuration list for PBXNativeTarget "Table With ScrollviewTests" */;
+			buildPhases = (
+				030D234116D0112E00B38719 /* Sources */,
+				030D234216D0112E00B38719 /* Frameworks */,
+				030D234316D0112E00B38719 /* Resources */,
+				030D234416D0112E00B38719 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				030D234C16D0112E00B38719 /* PBXTargetDependency */,
+			);
+			name = "Table With ScrollviewTests";
+			productName = "Table With ScrollviewTests";
+			productReference = 030D234616D0112E00B38719 /* Table With ScrollviewTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		030D231516D0112E00B38719 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = KE;
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "Eduardo Carrillo Albor";
+			};
+			buildConfigurationList = 030D231816D0112E00B38719 /* Build configuration list for PBXProject "Table With Scrollview" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 030D231416D0112E00B38719;
+			productRefGroup = 030D231E16D0112E00B38719 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				030D231C16D0112E00B38719 /* Table With Scrollview */,
+				030D234516D0112E00B38719 /* Table With ScrollviewTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		030D231B16D0112E00B38719 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				030D232B16D0112E00B38719 /* InfoPlist.strings in Resources */,
+				030D233316D0112E00B38719 /* Default.png in Resources */,
+				030D233516D0112E00B38719 /* Default@2x.png in Resources */,
+				030D233716D0112E00B38719 /* Default-568h@2x.png in Resources */,
+				030D233A16D0112E00B38719 /* MainStoryboard_iPhone.storyboard in Resources */,
+				030D233D16D0112E00B38719 /* MainStoryboard_iPad.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		030D234316D0112E00B38719 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				030D235216D0112E00B38719 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		030D234416D0112E00B38719 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		030D231916D0112E00B38719 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				030D232D16D0112E00B38719 /* main.m in Sources */,
+				030D233116D0112E00B38719 /* KEAppDelegate.m in Sources */,
+				030D234016D0112E00B38719 /* KEViewController.m in Sources */,
+				030D236016D0117D00B38719 /* KETableView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		030D234116D0112E00B38719 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				030D235516D0112F00B38719 /* Table_With_ScrollviewTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		030D234C16D0112E00B38719 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 030D231C16D0112E00B38719 /* Table With Scrollview */;
+			targetProxy = 030D234B16D0112E00B38719 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		030D232916D0112E00B38719 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				030D232A16D0112E00B38719 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		030D233816D0112E00B38719 /* MainStoryboard_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				030D233916D0112E00B38719 /* en */,
+			);
+			name = MainStoryboard_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		030D233B16D0112E00B38719 /* MainStoryboard_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				030D233C16D0112E00B38719 /* en */,
+			);
+			name = MainStoryboard_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+		030D235016D0112E00B38719 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				030D235116D0112E00B38719 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		030D235616D0112F00B38719 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		030D235716D0112F00B38719 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		030D235916D0112F00B38719 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Table With Scrollview/Table With Scrollview-Prefix.pch";
+				INFOPLIST_FILE = "Table With Scrollview/Table With Scrollview-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		030D235A16D0112F00B38719 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Table With Scrollview/Table With Scrollview-Prefix.pch";
+				INFOPLIST_FILE = "Table With Scrollview/Table With Scrollview-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		030D235C16D0112F00B38719 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Table With Scrollview.app/Table With Scrollview";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Table With Scrollview/Table With Scrollview-Prefix.pch";
+				INFOPLIST_FILE = "Table With ScrollviewTests/Table With ScrollviewTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		030D235D16D0112F00B38719 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Table With Scrollview.app/Table With Scrollview";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Table With Scrollview/Table With Scrollview-Prefix.pch";
+				INFOPLIST_FILE = "Table With ScrollviewTests/Table With ScrollviewTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		030D231816D0112E00B38719 /* Build configuration list for PBXProject "Table With Scrollview" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				030D235616D0112F00B38719 /* Debug */,
+				030D235716D0112F00B38719 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		030D235816D0112F00B38719 /* Build configuration list for PBXNativeTarget "Table With Scrollview" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				030D235916D0112F00B38719 /* Debug */,
+				030D235A16D0112F00B38719 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		030D235B16D0112F00B38719 /* Build configuration list for PBXNativeTarget "Table With ScrollviewTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				030D235C16D0112F00B38719 /* Debug */,
+				030D235D16D0112F00B38719 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 030D231516D0112E00B38719 /* Project object */;
+}
