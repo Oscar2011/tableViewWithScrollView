@@ -14,7 +14,7 @@
 }
 #pragma mark public methods
 -(id)dequeCell{
-    UITableViewCell * cell = [_reusableCell anyObject];
+    UIView * cell = [_reusableCell anyObject];
     if (cell){
         [_reusableCell removeObject:cell];
     }
@@ -68,38 +68,42 @@
 }
 
 -(void) refreshView{
+	//1
     if (CGRectIsNull(_scrollView.frame)) {
         return;
     }
+	//2
     CGFloat rowHeight = (_delegate && [_delegate respondsToSelector:@selector(heightForRow)])?[_delegate heightForRow] : 50.0f;
     
     _scrollView.contentSize = CGSizeMake(_scrollView.bounds.size.width,
                                          rowHeight * [_dataSource numberOfRows]);
-    
-    NSArray * cellSubViews=[self cellSubViews];
-    for (__weak UIView * cell in cellSubViews) {
+	//3
+    for (__weak UIView * cell in [self cellSubViews]) {
         (cell.frame.origin.y + cell.frame.size.height < _scrollView.contentOffset.y)?[self recycleCell:cell]:nil;
         (cell.frame.origin.y > _scrollView.contentOffset.y + _scrollView.frame.size.height)?[self recycleCell:cell]:nil;
     }
-    
+	//4
     int firstVisibleIndex = MAX(0, floor(_scrollView.contentOffset.y/rowHeight));
     int lastVisibleIndex = MIN([_dataSource numberOfRows], firstVisibleIndex + 1 + ceil(_scrollView.frame.size.height/rowHeight));
+    NSArray * cellSubViews=[self cellSubViews];
+    //5
     for (int row=firstVisibleIndex; row <lastVisibleIndex; row++) {
-        
         UITableViewCell * cell = (UITableViewCell*)cellForRow(row, rowHeight, cellSubViews);
         if (!cell) {
             cell = (UITableViewCell*)[_dataSource cellForRow:row];
         }
         cell.frame = CGRectMake(0, row * rowHeight, _scrollView.frame.size.width, rowHeight);
+        //We set the position of the row on the table.
         cell.tag = row;
         (_delegate && [_delegate respondsToSelector:@selector(willDisplayCell:)])?[_delegate willDisplayCell:cell]:nil;
-        [_scrollView insertSubview:cell atIndex:0];
+        //Delegate exist and implements the optional method of willDisplayCell, the method is called.
+        [_scrollView insertSubview:cell atIndex:0]; //Add the row.
     }
 }
 
 -(NSArray*)cellSubViews{
     NSMutableArray * cells = [@[] mutableCopy];
-    for (__weak UIView * view in _scrollView.subviews)
+    for ( UIView * view in _scrollView.subviews)
         [view isKindOfClass:_cellClass]?[cells addObject:view]:nil;
     return cells;
 }
@@ -111,7 +115,7 @@
 
 UIView * cellForRow(int index, CGFloat rowHeight, NSArray * subviews){
     float topEdgeRow = index * rowHeight;
-    for ( __weak UIView * view in subviews) {
+    for (UIView * view in subviews) {
         if (view.frame.origin.y == topEdgeRow) {
             return view;
         }
@@ -122,7 +126,7 @@ UIView * cellForRow(int index, CGFloat rowHeight, NSArray * subviews){
 #pragma mark KETableViewDelegate
 -(void)didSelectRowAtIndex:(id)sender{
     UITapGestureRecognizer * recognizer = sender;
-    (_delegate && [_delegate respondsToSelector:@selector(didSelectRowAtIndex:)])?[self.delegate didSelectRowAtIndex:recognizer.view.tag]:nil;
+    (_delegate && [_delegate respondsToSelector:@selector(didSelectRowAtIndex:)])?[_delegate didSelectRowAtIndex:recognizer.view.tag]:nil;
     
 }
 #pragma mark UIScrollViewDelegate

@@ -54,8 +54,8 @@
 }
 
 -(void)willDisplayCell:(UITableViewCell *)cell{
-    cell.backgroundColor = [UIColor purpleColor];
-    cell.textLabel.textColor = [UIColor whiteColor];
+    //cell.backgroundColor = [UIColor purpleColor];
+    //cell.textLabel.textColor = [UIColor whiteColor];
 }
 
 -(CGFloat)heightForRow{
